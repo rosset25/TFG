@@ -1,0 +1,270 @@
+\documentclass[pdftex,11pt,a4paper]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{url}
+\usepackage[top=1.5in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{hyperref}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+
+% Upper part of the page. The '~' is needed because \\
+% only works if a paragraph has started.
+% -----
+\includegraphics[width=0.15\textwidth]{logoUJI.jpg}~\\[2cm]
+
+\textsc{\LARGE Grado en Ingeniería Informática}\\[1.5cm]
+
+\textsc{\LARGE Trabajo de Final de Grado}\\[1.5cm]
+%%%%%%\textsc{\LARGE Versión Provisional}\\[1.5cm]
+
+% Title
+\HRule \\[0.4cm]
+{ \huge \bfseries Título \\[0.4cm] }
+
+\HRule \\[1.5cm]
+
+% Author and supervisor
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Autor:}\\
+Rosa María \textsc{de Juan Oliva}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+Jose Luís \textsc{Martínez Pérez} \\
+\emph{Tutor académico:} \\
+María de las Mercedes \textsc{Fernández Redondo}
+\end{flushright}
+\end{minipage}
+
+\vfill
+
+% Bottom of the page
+% -----
+% Sustituir los signos "\_" por lo que corresponda. 
+{\large Fecha de lectura: \_\_ de \_\_\_\_\_\_\_\_\_ de 20\_\_\\
+Curso académico 20\_\_/20\_\_}
+
+\end{center}
+\end{titlepage}
+\setlength{\parskip}{\baselineskip}
+
+
+
+% ------------------- Página resumen ---------------------
+
+\thispagestyle{empty} % página sin numerar
+
+\clearpage % Resumen y Palabras clave en página 2.
+
+\section*{Resumen}
+
+El resumen típicamente consta de entre 100 y 200 palabras. Un documento muy recomendable que da pautas sobre la elaboración del resumen es de la Universidad de Córdoba~\cite{bib:elresumen}.
+
+\section*{Palabras clave}
+
+Típicamente entre 3 y 5 palabras o conceptos relacionados con el proyecto.
+
+\section*{Keywords}
+
+Las palabras clave, traducidas al inglés, ya que el Repositorio UJI está conectado con la biblioteca digital europea. 
+
+\thispagestyle{empty} % página sin numerar
+
+\cleardoublepage
+
+
+
+% ------------------- Página índice ---------------------
+
+\pagestyle{plain} % todas las páginas numeradas, sin cabeceras. Sustituir por \pagestyle{headings} para añadir cabeceras a las páginas. 
+
+\tableofcontents
+
+\cleardoublepage
+
+
+
+% ------------------- Página explicativa, no debe constar en la memoria ---------------------
+
+% ---- BORRAR DESDE AQUÍ
+
+\chapter*{Instrucciones y recomendaciones}
+
+La portada de este documento pretende ser un estándar para todos los Trabajos de Fin de Grado (TFG) del grado en Ingeniería Informática de la Universitat Jaume I. Sin embargo, el resto del documento, pretende ser una ayuda y no una imposición. 
+
+De igual manera, las instrucciones y recomendaciones que se indican a continuación, pretenden ser una ayuda para orientar a los autores en la elaboración de la memoria del TFG, y en muchos casos, de documentos técnicos en general. 
+
+\section*{Procesador de textos}
+
+Aunque se proporcionan los ficheros fuente en Latex de estos ejemplos para facilitar su uso a quien le pueda interesar, el formato y el procesador de textos es libre. Solo la portada es imprescindible que sea igual (para homogeneizar el aspecto de la memorias de TFG del grado en Ingeniería Informática) y debe existir un resumen y unas palabras clave (requisito del Repositorio UJI, junto con la otra información de la portada).  
+
+\section*{Formato}
+
+El índice y todos los capítulos de la memoria deben empezar en página impar. 
+
+Excepto la portada, deben numerarse todas las páginas. Si se desea, se pueden utilizar distintos tipos de numeración en las distintas partes del documento.
+
+Las figuras deben estar numeradas. El texto debe referirse a las figuras utilizando la numeración y no su localización. Por ejemplo, es mejor decir ``en la Figura 3'' que decir ``en la siguiente figura''. Las figuras deben localizarse cerca del texto donde se nombran, pero no tiene por qué ser exactamente a continuación, sobre todo si esto genera un hueco en blanco. 
+Hay que evitar estos espacios en blanco, continuando con el discurso y colocando la figura en la siguiente página 
+(o incluso más si se nombran muchas figuras en un corto espacio). Una figura también puede aparecer antes del párrafo que la referencia. De manera análoga se han de tratar las tablas y los algoritmos, que en ambos casos deben llevar su propia numeración. 
+
+Cada figura debe ir acompañada de un pie que incluya la numeración. Es muy recomendable que el pie de las figuras sea autoexplicativo. La figura junto con su pie, debería por sí sola permitir hacerse una idea de lo que se quiere expresar. Además, el texto debe mencionar la figura, y en general desarrollar con más detalle esta idea. 
+
+El texto contenido en las figuras (ojo, no ya el pie, sino el que forma parte de la figura) ha de ser suficientemente grande como para que se pueda leer. Es habitual que hayan esquemas con texto (por ejemplo, el diseño de una base de datos), que al encajarlos en una página de tamaño A4, impide que el texto se pueda leer con normalidad. 
+A veces basta con hacer más grande la figura, y otras veces no es suficiente y hay que buscar alternativas. Por ejemplo, se puede hacer un diagrama con solo nombres de las tablas y mostrar los atributos en otras tablas/figuras, o se puede dividir el diagrama en partes con cierto denominador común de modo que se muestre primero el diagrama general más esquematizado, y luego cada parte con más detalle. 
+
+El formato de los párrafos debe ser homogéneo, y no debe haber faltas de ortografía. Todos los procesadores de textos (incluso Latex) tienen revisores ortográficos, muy fáciles de utilizar.  Se recomienda usar alineación justificada en los párrafos.
+
+\section*{Estructura}
+
+El índice que se muestra en este documento es solo un ejemplo que representa una posible estructura de la Memoria Técnica del Proyecto. Sin embargo, algunos de los capítulos que se proponen aquí, podrían desglosarse en varios capítulos. También el desglose en secciones es solo un esbozo. Cada memoria debe contener un desglose adecuado a la metodología empleada y a las tareas realizadas.
+
+Corresponde al tutor académico orientar al alumno sobre la estructura final de la memoria, en función, entre otras cosas, de la naturaleza del proyecto.
+
+\section*{Contenido}
+
+La memoria técnica debe contar todo lo que se ha hecho en el proyecto. No solo debe reflejar los resultados obtenidos, sino también los objetivos, la planificación previa, la estimación de recursos, etc. Además, debe contener una descripción del seguimiento y control del proyecto, según el desarrollo real, en comparación con la planificación inicial, así como de los principales riesgos identificados.
+
+El análisis y el diseño del sistema pueden ocupar uno o varios capítulos. En estos deben incluirse los que procedan en cada caso de entre los siguientes elementos: los requisitos, los casos de uso, las historias de usuario, diagrama de casos de uso, el diseño de la base de datos, el diseño del arquitectura del sistema, el diseño navegacional (de la interfaz), y otros elementos que se estimen de interés. Los distintos elementos deben seleccionarse en función de la metodología seguida y esquematizarse mediante diagramas siempre que sea posible y deben describirse con detalle suficiente.
+
+De la misma forma la implementación, pruebas y despliegue del sistema puede ocupar uno o varios capítulos. La estructura de estos capítulos también debe depender de la metodología de trabajo seguida y se deben proporcionar las explicaciones convenientes para que se entienda el trabajo desarrollado sin ser necesario incluir todo el código desarrollado. Es necesario documentar adecuadamente las diferentes estrategias y tipos de pruebas que se han realizado para verificar y validar el sistema a todos los niveles.
+
+La elección de las herramientas utilizadas debe justificarse adecuadamente cuando proceda, y en la fase que proceda (análisis, diseño, implementación, etc.)
+
+En las conclusiones, además de las consideraciones personales, académicas o profesionales que el alumno quiera comentar, 
+se pueden incluir posibles extensiones del proyecto y trabajo futuro, así como la viabilidad comercial o empresarial cuando proceda.
+
+\section*{Referencias bibliográficas}
+
+Hay muchas razones por las que los textos técnicos deben referenciar distintas fuentes bibliográficas. En primer lugar, el texto debe permitir a los lectores una valoración crítica del mismo, lo cual requiere que sea posible cotejar la información utilizada y comprobar si está bien fundamentado y sus conclusiones bien justificadas. Y en segundo lugar, se debe dar justo crédito al trabajo de los autores cuya información se utiliza. Cuando se utiliza información proporcionada por otros autores 
+(a través de libros, revistas, tutoriales, etc. incluso blogs online), copiar sin atribución figuras, tablas, resultados, e inclusive el texto de manuscritos ajenos, publicados o no, es considerado \textbf{plagio}. Para evitarlo, \textbf{cita siempre} el trabajo de otros autores. 
+
+Es muy recomendable ver el vídeo tutorial sobre el plagio \cite{bib:plagio} elaborado por una comisión formada por REBIUN y la CRUE, que a su vez está basado en un material \textit{iResearch} desarrollado originalmente por la biblioteca de la Universidad de Sydney bajo una licencia de \textit{Creative Commons}. Dura tan solo unos pocos minutos y explica de manera clara y sencilla en qué situaciones es necesario referenciar bibliográficamente y cómo debe hacerse.
+
+Además, está la cuestión de qué datos deben indicarse al referenciar cada ítem de la bibliografía. Para ello, puedes consultar otro tutorial interactivo \cite{bib:comocitar}, o bien un documento elaborado por la biblioteca de la Universidad de Córdoba \cite{bib:refBiblio}, con recomendaciones acerca de cómo referenciar los documentos en función de si se trata de libros, revistas, sitios web, etc. 
+
+Entre las pautas generales que ofrecen estos documentos, cabe destacar las siguientes:
+\begin{itemize}
+\item
+Más importante que seguir puntillosamente un formato para mostrar la bibliografía es ``que todas las referencias de un trabajo sean consistentes unas con otras en cuanto a su redacción. (Y si recibimos instrucciones específicas de un profesor, editor, etc., respetarlas, por supuesto).'' \cite{bib:refBiblio}
+\item
+Las referencias deben citarse a lo largo del texto (podéis ver varios ejemplos en esta sección). No basta con dar la lista de referencias al final. Tampoco se debe sustituir la lista de referencias por notas a pie de página \cite{bib:reglas}. ``Los documentos en línea pueden cambiar, por lo que debemos consignar la localización específica en Internet y la fecha en la que los hemos consultado.'' \cite{bib:refBiblio}
+\end{itemize}
+
+\section*{Entrega de la memoria y calificación}
+
+Además de la memoria en formato PDF, se puede entregar cualquier material suplementario que se estime oportuno (código fuente, documentación, vídeo demostrativo, etc.) para que el tutor y los miembros del tribunal lo puedan tener en consideración.
+
+Una vez realizada la exposición oral ante el tribunal y obtenida la calificación, antes de pasar la nota al expediente, el estudiante tiene la obligación de remitir la versión definitiva de la memoria con la fecha de lectura actualizada. 
+
+% ---- BORRAR HASTA AQUÍ
+
+
+
+% ------------------- Cuerpo de la memoria ---------------------
+
+\chapter{Introducción}
+
+\section{Contexto y motivación del proyecto}
+
+En esta sección se describe la empresa y el proyecto que se ha propuesto, así como la necesidad o motivación y utilidad del mismo.
+
+\section{Objetivos del proyecto}
+
+Se deben enunciar los objetivos detallados del proyecto y los principales resultados esperados. Se debe detallar el alcance funcional, organizativo e informático del proyecto.
+
+\section{Descripción del proyecto}
+
+En esta sección se puede aportar información adicional sobre el proyecto y las tecnologías que se van a usar en el proyecto, así como por ejemplo cual es la situación inicial a partir de la cual se va a desarrollar el proyecto o la mejora que se espera conseguir.
+
+\section{Estructura de la memoria}
+
+Se puede añadir un párrafo para detallar cual es la estructura de la memoria. Por ejemplo, en el capítulo 2 se muestra la metodología, planificación y seguimiento que se ha realizado del proyecto. En el capítulo 3, se detalla el análisis ....
+
+\chapter{Planificación del proyecto}
+
+\section{Metodología}
+
+Metodología que se ha usado en el desarrollo del proyecto. En esta sección se debe explicar la forma de trabajar en la empresa tanto en los pasos previos de planificación del proyecto como en su desarrollo.
+
+\section{Planificación}
+
+Se explica la planificación teniendo en cuenta la metodología escogida: predictiva, ágil, etc.
+
+\section{Estimación de recursos y costes del proyecto}
+
+Se ha de valorar el proyecto como si fuera un proyecto profesional.
+
+\section{Seguimiento del proyecto}
+
+Se detalla el control del proyecto a lo largo de su desarrollo según la metodología utilizada (predictiva, ágil, etc.) y las posibles medidas llevadas a cabo ante las desviaciones de la planificación.
+
+\chapter{Análisis y diseño del sistema}
+
+\section{Análisis del sistema}
+
+Se especifican los requisitos y se realiza el modelado del sistema.
+
+\section{Diseño de la arquitectura del sistema}
+
+Se describen los componentes del sistema y su interrelación. Se debe incluir el diseño de la base de datos si procede.
+
+\section{Diseño de la interfaz}
+
+Se deben indicar los criterios de diseño elegidos, así como mostrar el estándar que se ha seguido para el diseño de la interfaz gráfica si procede.
+
+\chapter{Implementación y pruebas}
+
+\section{Detalles de implementación}
+
+Se ha de explicar el trabajo de programación realizado, detallando patrones, estrategias y/o algoritmo utilizados así como las decisiones tomadas y las principales dificultades en cuanto a la programación así como la solución adoptada. 
+
+\section{Verificación y validación}
+
+Se deben detallar las pruebas de verificación y validación realizadas.
+
+\chapter{Conclusiones}
+Se pueden presentar conclusiones en varios aspectos: en el ámbito formativo (sobre lo que has aprendido), en el ámbito profesional (sobre la experiencia en la empresa) y en el ámbito personal (sobre tu experiencia personal).
+
+
+
+% ------------------- Bibliografia ---------------------
+
+
+\bibliography{bibliografia.bib}
+
+\bibliographystyle{plain}
+
+
+
+% ------------------- Anexos ---------------------
+
+\appendix
+\renewcommand\appendixname{Anexo}
+
+
+
+% ---- Primer Anexo ----
+\chapter{Estudio detallado de...}
+
+\section{Definición}
+
+\section{Aplicaciones}
+
+
+
+% ---- Segundo Anexo ----
+\chapter{Tablas de ...}
+
+\end{document}
