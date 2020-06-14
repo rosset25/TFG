@@ -1,0 +1,4 @@
+pdflatex plantillaMemoriaEI1054.tex
+bibtex plantillaMemoriaEI1054
+pdflatex plantillaMemoriaEI1054.tex
+pdflatex plantillaMemoriaEI1054.tex
