@@ -1,0 +1,52 @@
+% EJEMPLO DE TABLA CU
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{2,7cm}|m{11cm}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Especificación del caso de uso CU01}}\\
+\hline 
+\endhead
+
+\textbf{Identificador} & CU01  
+\\ \hline
+\textbf{Nombre} & Autenticarse  
+\\ \hline
+\textbf{Descripción} & El sistema debe permitir que el usuario acceda a la plataforma usando sus credenciales.  
+\\ \hline
+\textbf{Autor} & Rosa María de Juan Oliva 
+\\ \hline
+\textbf{Supervisor} & Jose Luís Martínez Pérez  
+\\ \hline
+\textbf{Actores} & Cliente, Administrador 
+\\ \hline
+\textbf{Precondición} & El usuario debe estar registrado en la plataforma. 
+\\ \hline
+\textbf{Secuencia normal} & 
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El usuario introduce su email
+\item El usuario introduce su contraseña
+\item El sistema valida los datos y muestra la página principal
+\end{enumerate}
+\\ \hline
+\textbf{Excepciones} &
+\begin{itemize}
+\addtolength{\itemsep}{-3mm}
+\item El usuario introduce un email erróneo
+\item El usuario introduce una contraseña errónea
+\item El usuario no introduce ningún dato
+\end{itemize}
+\\ \hline
+\textbf{Prioridad} & Alta  
+\\ \hline
+\textbf{Comentarios} & Por defecto el sistema tiene como página principal el listado de contadores.  
+\\ \hline
+
+\caption{Especificación del caso de uso CU01.} \label{tablalarga:tablaCU01}
+\end{longtable}
+\end{center}

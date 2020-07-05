@@ -8,7 +8,6 @@
 \usepackage[top=1.5in, bottom=1in, left=1in, right=1in]{geometry}
 \usepackage{hyperref}
 \usepackage{multirow}
-\definecolor{Micolor}{RGB}{193,124,250}
 
 \usepackage{float}
 \usepackage{array}
@@ -144,6 +143,9 @@ Se puede añadir un párrafo para detallar cual es la estructura de la memoria. 
 
 Metodología que se ha usado en el desarrollo del proyecto. En esta sección se debe explicar la forma de trabajar en la empresa tanto en los pasos previos de planificación del proyecto como en su desarrollo.\colorbox{CadetBlue}{f sdfs sdfds fds fsdf s1} FALTA HACER LA METODOLOGÍA
 
+
+
+
 % ----------------------
 \section{Tecnología}
 
@@ -191,13 +193,15 @@ Por último, la IDE (\textit{Integrated Development Environment}\footnote{\color
 \section{Planificación}
 
 % poner Inicialmente/ En primer lugar??
-Primeramente, para la planificación de este proyecto, se creó una pila de producto con el fin de tener una idea más clara sobre la complejidad de cada funcionalidad y establecer un orden de prioridad a la hora de su implementación. La tabla \colorbox{CadetBlue}{ X} muestra la pila de producto, formada por las historias de usuario establecidas para representar las funcionalidades y requisitos de la aplicación. Además, durante esta primera etapa, se detallaron todas las historias de usuario, incluyendo un escenario válido e inválido para cada una. También se diseñó la base de datos necesaria para el almacenamiento de la información que usaría la aplicación y se planificó tanto la duración total del proyecto como la estimación de las tareas a realizar durante el período de prácticas.
+Primeramente, para la planificación de este proyecto, se creó una pila de producto con el fin de tener una idea más clara sobre la complejidad de cada funcionalidad y establecer un orden de prioridad a la hora de su implementación. La tabla \colorbox{CadetBlue}{ X} muestra la pila de producto final, formada por las historias de usuario establecidas para representar las funcionalidades y requisitos de la aplicación. También se diseñó la base de datos necesaria para el almacenamiento de la información que usaría la aplicación y se planificó tanto la duración total del proyecto como la estimación de las tareas a realizar durante el período de prácticas.
 
 Una vez realizada esta planificación inicial, antes de empezar con la implementación de la aplicación, se estableció un período de formación. Este período tendría una duración entre una y dos semanas para el estudio y aprendizaje de las tecnologías que se iban a usar en este proyecto, explicadas con más detalle en la sección \colorbox{CadetBlue}{X}. Es por ello por lo que se consultaron varios tutoriales sobre el \textit{framework Angular 8}, el lenguaje de programación \textit{Typescript} y el uso de escritura lambda en \textit{Java}. A su vez, se consultaron proyectos realizados anteriormente, lo que fue de gran ayuda para la estimación del tiempo y los costes, así como para entender y analizar el estilo de programación utilizado por los miembros del Departamento de \textit{Software}, con el fin de generar un código relativamente homogéneo y fácil de comprender. 
 
 Cabe añadir que, durante esta etapa de formación, se estuvo estudiando las posibles mejoras previstas para la aplicación y cómo sería su implementación. Puesto que dichas mejoras están relacionadas con las predicciones de consumo de agua, se optó por la opción de usarlas como pretexto para la introducción al mundo del \textit{machine learning} por parte del equipo de desarrollo \textit{software}. Además, estas mejoras a largo plazo son independientes del producto base diseñado, por lo que no se incluyen en el coste y tiempo estimado del proyecto, documentado en el \colorbox{CadetBlue}{apartado x}.
 
 En última instancia, se procedió a la implementación del proyecto empezando por su configuración inicial, prosiguiendo con la creación de la base de datos y continuando con las funcionalidades de la aplicación, de mayor a menor prioridad.
+
+\colorbox{CadetBlue}{SE DEBERÍA COMENTAR QUE ÉSTA ES LA PILA DE PRODUCTO FINAL Y QUE DURANTE LA PLANIFICACIÓN HUBO VARIOS CAMBIOS. Tal vez se debería poner la pila del producto inicial o comentarla}
 
 \renewcommand{\tablename}{Tabla}
 
@@ -206,12 +210,12 @@ En última instancia, se procedió a la implementación del proyecto empezando p
 \tolerance=1000
 
 \begin{center}
-\begin{longtable}{|>{\centering\arraybackslash}X m{1,2cm}|m{6,7cm}|>{\centering\arraybackslash}X m{1,4cm}|>{\centering\arraybackslash}X m{1,6cm}|}
+\begin{longtable}{|>{\centering\arraybackslash}X m{1,5cm}|m{7,5cm}|>{\centering\arraybackslash}X m{1,6cm}|>{\centering\arraybackslash}X m{1,8cm}|}
 \hline
-{\centering Código} &
-{\centering \begin{center}Historia de usuario\end{center}} &
-{Puntos de historia} &
-{Prioridad} &
+{\centering \textbf{Código}} &
+{\centering \begin{center} \textbf{Historia de usuario}\end{center}} &
+{\textbf{Puntos de historia}} &
+{\textbf{Prioridad}} &
 \hline 
 \endhead
 
@@ -223,8 +227,8 @@ HU5 & Como usuario quiero elegir el período de tiempo para visualizar de manera
 HU6 & Como usuario quiero modificar mi perfil para cambiar mis datos personales. & 8 & 6 \\ \hline
 HU7 & Como usuario quiero visualizar las alarmas programadas en cada contador para saber cuáles tengo activas y cuáles no. & 3 & 7 \\ \hline
 HU8 & Como usuario quiero poder programar una alarma para uno o varios contadores para que me avise cuando suceda el evento que haya especificado. & 8 & 8 \\ \hline
-HU9 & Como usuario quiero modificar una alarma para poder añadir, cambiar o quitar parte de sus especificaciones. & 3 & 10 \\ \hline
-HU10 & Como usuario quiero poder borrar una alarma para uno o varios contadores de agua para que ya no me avise del evento que había especificado. & 2 & 9 \\ \hline
+HU9 & Como usuario quiero modificar una alarma para poder cambiar sus especificaciones. & 3 & 10 \\ \hline
+HU10 & Como usuario quiero poder desactivar una alarma para uno o varios contadores de agua para que ya no me avise del evento que había especificado. & 2 & 9 \\ \hline
 HU11 & Como usuario quiero rellenar un formulario para un contador para poder especificar mejor las condiciones que se deberían de tener en cuenta a la hora de mostrar datos estadísticos y predictivos de mi consumo de agua. & 5 & 11 \\ \hline
 HU12 & Como usuario quiero modificar el formulario con información adicional de un contador para indicar que mi situación actual ha cambiado y saber si influye en mi consumo de agua. & 5 & 12 \\ \hline
 HU13 & Como usuario quiero consultar en un mapa la posición de mis contadores para así poder visualizar su ubicación geográfica. & 13 & 13 \\ \hline
@@ -258,150 +262,63 @@ Se especifican los requisitos y se realiza el modelado del sistema. cifican los 
 % ---- FINAL DE CAMBIAR ---
 \newpage
 
+% Se debe añadir el diagrama de CU y las tablas
 
-% TABLAS DE HISTORIAS DE USUARIOS
+% EJEMPLO DE TABLA CU
 
-% H1
 \renewcommand{\tablename}{Tabla}
 \renewcommand{\arraystretch}{1,7}
 \pretolerance=1000
 \tolerance=1000
 
 \begin{center}
-\begin{longtable}{|>{\centering\arraybackslash}X m{2cm}|m{13cm}|}
+\begin{longtable}{|m{2,7cm}|m{11cm}|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Historia de usuario 1} (HU1)}\\
+\multicolumn{2}{|c|}{\textbf{Especificación del caso de uso CU01}}\\
 \hline 
 \endhead
 
-Historia de usuario & Como usuario quiero ver mi lista de contadores para saber sus datos.  
+\textbf{Identificador} & CU01  
 \\ \hline
-
-Escenario válido & 
-Como usuario quiero loguearme en la plataforma para poder consultar la información de mis contadores de agua y mi consumo. \break
-\break
-Given:
+\textbf{Nombre} & Autenticarse  
+\\ \hline
+\textbf{Descripción} & El sistema debe permitir que el usuario acceda a la plataforma usando sus credenciales.  
+\\ \hline
+\textbf{Autor} & Rosa María de Juan Oliva 
+\\ \hline
+\textbf{Supervisor} & Jose Luís Martínez Pérez  
+\\ \hline
+\textbf{Actores} & Cliente, Administrador 
+\\ \hline
+\textbf{Precondición} & El usuario debe estar registrado en la plataforma. 
+\\ \hline
+\textbf{Secuencia normal} & 
 \begin{enumerate}
 \addtolength{\itemsep}{-3mm}
-\item Contraseña válida: asjdpjaso
-\item Usuario válido: asjdpjaso
+\item El usuario introduce su email
+\item El usuario introduce su contraseña
+\item El sistema valida los datos y muestra la página principal
 \end{enumerate}
-When:
-\begin{enumerate}
-\addtolength{\itemsep}{-3mm}
-\item El usuario doajdñajsñdlmaslñ
-\item jasñdjñas assdjajd aslsdjla dkasdna sdlkasnldlka
-\end{enumerate}
-Then:
-\addtolength{\itemsep}{-3mm}
+\\ \hline
+\textbf{Excepciones} &
 \begin{itemize}
 \addtolength{\itemsep}{-3mm}
-\item Edad de Piedra
-\item Paleolítico
+\item El usuario introduce un email erróneo
+\item El usuario introduce una contraseña errónea
+\item El usuario no introduce ningún dato
 \end{itemize}
-
 \\ \hline
-Escenario inválido & 
-Como usuario quiero loguearme en la plataforma para poder consultar la información de mis contadores de agua y mi consumo. \break
-\break
-Given:
-\begin{enumerate}
-\addtolength{\itemsep}{-3mm}
-\item Contraseña válida: asjdpjaso
-\item Usuario válido: asjdpjaso
-\end{enumerate}
-When:
-\begin{enumerate}
-\addtolength{\itemsep}{-3mm}
-\item El usuario doajdñajsñdlmaslñ
-\item jasñdjñas assdjajd aslsdjla dkasdna sdlkasnldlka
-\end{enumerate}
-Then:
-\addtolength{\itemsep}{-3mm}
-\begin{itemize}
-\addtolength{\itemsep}{-3mm}
-\item Edad de Piedra
-\item Paleolítico
-\end{itemize}
-
+\textbf{Prioridad} & Alta  
+\\ \hline
+\textbf{Comentarios} & Por defecto el sistema tiene como página principal el listado de contadores.  
 \\ \hline
 
-\caption{Historia de usuario 1 (HU1).} \label{tablalarga:tablaHU1}
-\end{longtable}
-\end{center}
-
-% -----
-
-% H2 
-\renewcommand{\tablename}{Tabla}
-\renewcommand{\arraystretch}{1,7}
-\pretolerance=1000
-\tolerance=1000
-
-\begin{center}
-\begin{longtable}{|>{\centering\arraybackslash}X m{2cm}|m{13cm}|}
-\hline
-\multicolumn{2}{|c|}{\textbf{Historia de usuario 2} (HU2)}\\
-
-\hline 
-\endhead
-
-Historia de usuario & Como usuario quiero ver mi lista de contadores para saber sus datos.  \\ \hline
-Escenario válido & 
-Como usuario quiero ver mi consumo medio mensual y diario de todos mis contadores para saber cuál es mi gasto de agua promedio general. \break
-\break
-Given:
-\begin{enumerate}
-\addtolength{\itemsep}{-3mm}
-\item Contraseña válida: asjdpjaso
-\item Usuario válido: asjdpjaso
-\end{enumerate}
-When:
-\begin{enumerate}
-\addtolength{\itemsep}{-3mm}
-\item El usuario doajdñajsñdlmaslñ
-\item jasñdjñas assdjajd aslsdjla dkasdna sdlkasnldlka
-\end{enumerate}
-Then:
-\addtolength{\itemsep}{-3mm}
-\begin{itemize}
-\addtolength{\itemsep}{-3mm}
-\item Edad de Piedra
-\item Paleolítico
-\end{itemize}
-
-\\ \hline
-Escenario inválido & 
-Como usuario quiero loguearme en la plataforma para poder consultar la información de mis contadores de agua y mi consumo. \break
-\break
-Given:
-\begin{enumerate}
-\addtolength{\itemsep}{-3mm}
-\item Contraseña válida: asjdpjaso
-\item Usuario válido: asjdpjaso
-\end{enumerate}
-When:
-\begin{enumerate}
-\addtolength{\itemsep}{-3mm}
-\item El usuario doajdñajsñdlmaslñ
-\item jasñdjñas assdjajd aslsdjla dkasdna sdlkasnldlka
-\end{enumerate}
-Then:
-\addtolength{\itemsep}{-3mm}
-\begin{itemize}
-\addtolength{\itemsep}{-3mm}
-\item Edad de Piedra
-\item Paleolítico
-\end{itemize}
-
-\\ \hline
-
-\caption{Historia de usuario 2 (HU2).} \label{tablalarga:tablaHU2}
+\caption{Especificación del caso de uso CU01.} \label{tablalarga:tablaCU01}
 \end{longtable}
 \end{center}
 
 
-% Fin de las tablas de HUs
+% Fin de los CUs
 
 
 % ------------------------------------
