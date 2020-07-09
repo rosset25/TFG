@@ -1,0 +1,708 @@
+%-----------------TABLA CU02------------------------
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{2,7cm}|m{11cm}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Especificación del caso de uso CU02}}\\
+\hline 
+\endhead
+
+\textbf{Identificador} & CU02  
+\\ \hline
+\textbf{Nombre} & Ver información de los contadores propios
+\\ \hline
+\textbf{Descripción} & El sistema debe permitir que el usuario consulte información detallada sobre sus contadores y su consumo.
+\\ \hline
+\textbf{Autor} & Rosa María de Juan Oliva 
+\\ \hline
+\textbf{Supervisor} & Jose Luís Martínez Pérez  
+\\ \hline
+\textbf{Actores} & Cliente
+\\ \hline
+\textbf{Precondición} & El usuario debe estar autenticado en la plataforma.
+\\ \hline
+\textbf{Secuencia normal} & 
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El cliente pincha en el botón “Contadores”
+\item El sistema muestra el listado de los contadores del cliente
+\item El cliente selecciona un contador
+\item El sistema le muestra información detallada del contador seleccionado
+\end{enumerate}
+\\ \hline
+\textbf{Excepciones} & No se aplica
+\\ \hline
+\textbf{Prioridad} & Alta  
+\\ \hline
+\textbf{Comentarios} & Sin comentarios  
+\\ \hline
+
+\caption{Especificación del caso de uso CU02.} \label{tablalarga:tablaCU02}
+\end{longtable}
+\end{center}
+
+
+
+
+
+%-----------------TABLA CU03------------------------
+
+
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{2,7cm}|m{11cm}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Especificación del caso de uso CU03}}\\
+\hline 
+\endhead
+
+\textbf{Identificador} & CU03  
+\\ \hline
+\textbf{Nombre} & Añadir una alarma 
+\\ \hline
+\textbf{Descripción} & El sistema debe permitir que el usuario cree una alarma para uno o varios de sus contadores.  
+\\ \hline
+\textbf{Autor} & Rosa María de Juan Oliva 
+\\ \hline
+\textbf{Supervisor} & Jose Luís Martínez Pérez  
+\\ \hline
+\textbf{Actores} & Cliente 
+\\ \hline
+\textbf{Precondición} & El usuario debe estar autentificado en la plataforma. 
+\\ \hline
+\textbf{Secuencia normal} & 
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El sistema muestra el listado de alarmas
+\item El cliente pincha en el botón “Añadir”
+\item El sistema le muestra un diálogo con los campos a completar
+\item El cliente introduce la fecha de inicio y fin
+\item El cliente selecciona el tipo de alarma
+\item El cliente selecciona el o los contadores que tendrán la nueva alarma
+\end{enumerate}
+\\ \hline
+\textbf{Excepciones} &
+\begin{itemize}
+\addtolength{\itemsep}{-3mm}
+\item El cliente no completa algún campo obligatorio
+\item El cliente introduce un período de tiempo erróneo
+\item El cliente no selecciona ningún contador
+\item El cliente no selecciona el tipo de alarma
+\end{itemize}
+\\ \hline
+\textbf{Prioridad} & Media 
+\\ \hline
+\textbf{Comentarios} & Si no se especifica la fecha de finalización, la alarma continuará activa hasta que se desactive o se modifique la dicha fecha.
+\\ \hline
+
+\caption{Especificación del caso de uso CU03.} \label{tablalarga:tablaCU03}
+\end{longtable}
+\end{center}
+
+
+
+
+
+
+
+
+
+
+%-----------------TABLA CU04------------------------
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{2,7cm}|m{11cm}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Especificación del caso de uso CU04}}\\
+\hline 
+\endhead
+
+\textbf{Identificador} & CU04  
+\\ \hline
+\textbf{Nombre} & Anular una alarma  
+\\ \hline
+\textbf{Descripción} & El sistema debe permitir que el usuario desactive una alarma.
+\\ \hline
+\textbf{Autor} & Rosa María de Juan Oliva 
+\\ \hline
+\textbf{Supervisor} & Jose Luís Martínez Pérez  
+\\ \hline
+\textbf{Actores} & Cliente 
+\\ \hline
+\textbf{Precondición} & El usuario debe estar autenticado en la plataforma y debe haber creado antes la alarma que va a desactivar. 
+\\ \hline
+\textbf{Secuencia normal} & 
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El sistema muestra el listado de alarmas
+\item El cliente pincha en el botón “Modificar”
+\item El sistema muestra un diálogo con los campos a modificar
+\item El cliente pincha sobre el botón “Desactivar”
+\item El sistema pide confirmación al usuario
+\item El usuario confirma la desactivación de la alarma
+\end{enumerate}
+\\ \hline
+\textbf{Excepciones} & No se aplica
+\\ \hline
+\textbf{Prioridad} & Media 
+\\ \hline
+\textbf{Comentarios} & El usuario puede cancelar en cualquier momento la operación si pincha sobre el botón “Atrás”.   
+\\ \hline
+
+\caption{Especificación del caso de uso CU04.} \label{tablalarga:tablaCU04}
+\end{longtable}
+\end{center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%-----------------TABLA CU05------------------------
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{2,7cm}|m{11cm}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Especificación del caso de uso CU05}}\\
+\hline 
+\endhead
+
+\textbf{Identificador} & CU05  
+\\ \hline
+\textbf{Nombre} & Modificar una alarma  
+\\ \hline
+\textbf{Descripción} & El sistema debe permitir que el usuario cambie las especificaciones de una alarma.
+\\ \hline
+\textbf{Autor} & Rosa María de Juan Oliva 
+\\ \hline
+\textbf{Supervisor} & Jose Luís Martínez Pérez  
+\\ \hline
+\textbf{Actores} & Cliente
+\\ \hline
+\textbf{Precondición} & El usuario debe estar autenticado en la plataforma y debe haber creado antes la alarma que va a modificar.
+\\ \hline
+\textbf{Secuencia normal} & 
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El sistema muestra el listado de alarmas
+\item El cliente pincha en el botón “Modificar”
+\item El sistema muestra un diálogo con los campos a modificar
+\item El cliente modifica los datos que desea cambiar
+\item El cliente pincha sobre el botón “Guardar”
+\item El usuario confirma la desactivación de la alarma
+\end{enumerate}
+\\ \hline
+\textbf{Excepciones} &
+\begin{itemize}
+\addtolength{\itemsep}{-3mm}
+\item El cliente introduce un período de tiempo inválido
+\item El cliente deselecciona todos los contadores que tienen la alarma
+\end{itemize}
+\\ \hline
+\textbf{Prioridad} & Media
+\\ \hline
+\textbf{Comentarios} & El usuario puede cancelar en cualquier momento la operación si pincha sobre el botón “Atrás” y no se guardarán los cambios realizados. 
+\\ \hline
+
+\caption{Especificación del caso de uso CU05.} \label{tablalarga:tablaCU05}
+\end{longtable}
+\end{center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%-----------------TABLA CU06------------------------
+
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{2,7cm}|m{11cm}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Especificación del caso de uso CU06}}\\
+\hline 
+\endhead
+
+\textbf{Identificador} & CU06  
+\\ \hline
+\textbf{Nombre} & Ver información adicional de un contador  
+\\ \hline
+\textbf{Descripción} & El sistema debe permitir que el usuario consulte la información adicional que tiene su contador.
+\\ \hline
+\textbf{Autor} & Rosa María de Juan Oliva 
+\\ \hline
+\textbf{Supervisor} & Jose Luís Martínez Pérez  
+\\ \hline
+\textbf{Actores} & Cliente
+\\ \hline
+\textbf{Precondición} & El usuario debe estar autenticado en la plataforma.
+\\ \hline
+\textbf{Secuencia normal} & 
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El sistema muestra la información perteneciente al contador del cliente
+\item El cliente pincha sobre el enlace “Información adicional”
+\end{enumerate}
+\\ \hline
+\textbf{Excepciones} & No se aplica
+\\ \hline
+\textbf{Prioridad} & Media 
+\\ \hline
+\textbf{Comentarios} & Todos los contadores tendrán información adicional por defecto y no se tomará como información real hasta que ésta se modifique.
+\\ \hline
+
+\caption{Especificación del caso de uso CU06.} \label{tablalarga:tablaCU06}
+\end{longtable}
+\end{center}
+
+
+
+
+
+
+
+
+%-----------------TABLA CU07------------------------
+
+
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{2,7cm}|m{11cm}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Especificación del caso de uso CU07}}\\
+\hline 
+\endhead
+
+\textbf{Identificador} & CU07  
+\\ \hline
+\textbf{Nombre} & Modificar información adicional de un contador  
+\\ \hline
+\textbf{Descripción} & El sistema debe permitir que el usuario cambie los datos adicionales de su contador.
+\\ \hline
+\textbf{Autor} & Rosa María de Juan Oliva 
+\\ \hline
+\textbf{Supervisor} & Jose Luís Martínez Pérez  
+\\ \hline
+\textbf{Actores} & Cliente
+\\ \hline
+\textbf{Precondición} & El usuario debe estar autenticado en la plataforma.
+\\ \hline
+\textbf{Secuencia normal} & 
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El sistema muestra la información perteneciente al contador del cliente
+\item El cliente pincha sobre el enlace “Información adicional”
+\item El sistema muestra un formulario con los datos
+\item El cliente rellena los campos
+\item El cliente pincha sobre el botón “Guardar”
+\item El sistema guarda los datos
+\end{enumerate}
+\\ \hline
+\textbf{Excepciones} &
+\begin{itemize}
+\addtolength{\itemsep}{-3mm}
+\item El cliente introduce una cantidad de personas o baños erróneos
+\itemEl cliente deja algún campo en blanco
+\end{itemize}
+\\ \hline
+\textbf{Prioridad} & Media  
+\\ \hline
+\textbf{Comentarios} & El usuario puede cancelar en cualquier momento la operación si pincha sobre el botón “Atrás” y no se guardarán los cambios realizados. Si el usuario no ha modificado ningún dato con anterioridad, el sistema mostrará unos datos por defecto.
+\\ \hline
+
+\caption{Especificación del caso de uso CU07.} \label{tablalarga:tablaCU07}
+\end{longtable}
+\end{center}
+
+
+
+
+%-----------------TABLA CU08------------------------
+
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{2,7cm}|m{11cm}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Especificación del caso de uso CU08}}\\
+\hline 
+\endhead
+
+\textbf{Identificador} & CU08  
+\\ \hline
+\textbf{Nombre} & Modificar la información personal 
+\\ \hline
+\textbf{Descripción} & El sistema debe permitir que el usuario cambie los datos de su perfil.
+\\ \hline
+\textbf{Autor} & Rosa María de Juan Oliva 
+\\ \hline
+\textbf{Supervisor} & Jose Luís Martínez Pérez  
+\\ \hline
+\textbf{Actores} & Cliente, Administrador 
+\\ \hline
+\textbf{Precondición} & El usuario debe estar registrado y autenticado en la plataforma.
+\\ \hline
+\textbf{Secuencia normal} & 
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El usuario pincha sobre el botón “Perfil” y selecciona la opción de “Ver perfil”
+\item El sistema muestra los datos personales del usuario
+\item El usuario modifica el dato que desea cambiar
+\item El usuario pincha sobre el botón “Modificar” situado al lado del campo que ha cambiado
+\item El sistema guarda el dato modificado
+\end{enumerate}
+\\ \hline
+\textbf{Excepciones} &
+\begin{itemize}
+\addtolength{\itemsep}{-3mm}
+\item El usuario introduce una contraseña inválida
+\item El usuario introduce un correo electrónico inválido
+\item El usuario deja en blanco algún campo
+\end{itemize}
+\\ \hline
+\textbf{Prioridad} & Media
+\\ \hline
+\textbf{Comentarios} & Para el cambio de contraseña, el sistema pedirá confirmación del usuario. Si el usuario pincha sobre el botón “Modificar” y el dato no está cambiado, el sistema no realizará ningún cambio.
+\\ \hline
+
+\caption{Especificación del caso de uso CU08.} \label{tablalarga:tablaCU08}
+\end{longtable}
+\end{center}
+
+
+
+
+
+%-----------------TABLA CU09------------------------
+
+
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{2,7cm}|m{11cm}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Especificación del caso de uso CU09}}\\
+\hline 
+\endhead
+
+\textbf{Identificador} & CU09 
+\\ \hline
+\textbf{Nombre} & El sistema debe permitir que el usuario consulte la posición de sus contadores en el mapa.
+\\ \hline
+\textbf{Descripción} & El sistema debe permitir que el usuario acceda a la plataforma usando sus credenciales.  
+\\ \hline
+\textbf{Autor} & Rosa María de Juan Oliva 
+\\ \hline
+\textbf{Supervisor} & Jose Luís Martínez Pérez  
+\\ \hline
+\textbf{Actores} & Cliente 
+\\ \hline
+\textbf{Precondición} & El usuario debe estar autenticado en la plataforma.
+\\ \hline
+\textbf{Secuencia normal} & 
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El cliente pincha sobre el botón “Mapa”
+\item El sistema le muestra la ubicación de todos los contadores del cliente
+\end{enumerate}
+\\ \hline
+\textbf{Excepciones} & No se aplica
+\\ \hline
+\textbf{Prioridad} & Baja  
+\\ \hline
+\textbf{Comentarios} & Sin comentarios
+\\ \hline
+
+\caption{Especificación del caso de uso CU09.} \label{tablalarga:tablaCU09}
+\end{longtable}
+\end{center}
+
+
+
+
+%-----------------TABLA CU10------------------------
+
+
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{2,7cm}|m{11cm}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Especificación del caso de uso CU10}}\\
+\hline 
+\endhead
+
+\textbf{Identificador} & CU10  
+\\ \hline
+\textbf{Nombre} & Registrar a un cliente 
+\\ \hline
+\textbf{Descripción} & El sistema debe permitir que el usuario añada a un cliente nuevo con sus respectivos contadores a la plataforma.
+\\ \hline
+\textbf{Autor} & Rosa María de Juan Oliva 
+\\ \hline
+\textbf{Supervisor} & Jose Luís Martínez Pérez  
+\\ \hline
+\textbf{Actores} & Administrador 
+\\ \hline
+\textbf{Precondición} & El usuario debe estar autenticado en la plataforma.
+\\ \hline
+\textbf{Secuencia normal} & 
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El administrador pincha sobre el botón “Gestión”
+\item El sistema muestra un listado de clientes
+\item El administrador pincha sobre el botón “Añadir nuevo cliente”
+\item El sistema muestra un formulario
+\item El administrador rellena los campos con los datos del cliente nuevo
+\item El sistema pide confirmación al usuario
+\item El administrador pincha sobre el botón “Registrar”
+\item El sistema registra al nuevo usuario y guarda sus datos
+\end{enumerate}
+\\ \hline
+\textbf{Excepciones} &
+\begin{itemize}
+\addtolength{\itemsep}{-3mm}
+\item El administrador introduce un correo inválido
+\item El administrador introduce algún dato erróneo
+\item El administrador no completa todos los campos obligatorios
+\end{itemize}
+\\ \hline
+\textbf{Prioridad} & Media
+\\ \hline
+\textbf{Comentarios} & El sistema creará una contraseña por defecto y se enviará al correo que el administrador haya especificado. 
+\\ \hline
+
+\caption{Especificación del caso de uso CU10.} \label{tablalarga:tablaCU10}
+\end{longtable}
+\end{center}
+
+
+
+
+
+
+
+%-----------------TABLA CU11------------------------
+
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{2,7cm}|m{11cm}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Especificación del caso de uso CU11}}\\
+\hline 
+\endhead
+
+\textbf{Identificador} & CU11  
+\\ \hline
+\textbf{Nombre} & Dar de baja a un cliente 
+\\ \hline
+\textbf{Descripción} & El sistema debe permitir que el usuario desactive la cuenta de un cliente.
+\\ \hline
+\textbf{Autor} & Rosa María de Juan Oliva 
+\\ \hline
+\textbf{Supervisor} & Jose Luís Martínez Pérez  
+\\ \hline
+\textbf{Actores} & Administrador 
+\\ \hline
+\textbf{Precondición} & El usuario debe estar autenticado en la plataforma y debe de haber registrado al cliente anteriormente.
+\\ \hline
+\textbf{Secuencia normal} & 
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El administrador pincha sobre el botón “Gestión”
+\item El sistema muestra un listado de clientes
+\item El administrador pincha sobre el botón “Dar de baja” situado al lado del nombre del cliente
+\item El sistema pide confirmación y muestra un campo de texto opcional para rellenarlo con detalles de la baja
+\item El administrador confirma la operación
+\item El sistema desactiva la cuenta del cliente indicado
+\end{enumerate}
+\\ \hline
+\textbf{Excepciones} & No se aplica
+\\ \hline
+\textbf{Prioridad} & Media 
+\\ \hline
+\textbf{Comentarios} & El sistema permite cancelar la operación antes al pinchar sobre el botón “Cancelar”.
+\\ \hline
+
+\caption{Especificación del caso de uso CU11.} \label{tablalarga:tablaCU11}
+\end{longtable}
+\end{center}
+
+
+
+
+
+
+
+
+
+%-----------------TABLA CU12------------------------
+
+
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{2,7cm}|m{11cm}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Especificación del caso de uso CU12}}\\
+\hline 
+\endhead
+
+\textbf{Identificador} & CU12  
+\\ \hline
+\textbf{Nombre} & Ver contadores de los clientes
+\\ \hline
+\textbf{Descripción} & El sistema debe permitir que el usuario pueda visualizar la información de los contadores de sus clientes.
+\\ \hline
+\textbf{Autor} & Rosa María de Juan Oliva 
+\\ \hline
+\textbf{Supervisor} & Jose Luís Martínez Pérez  
+\\ \hline
+\textbf{Actores} & Administrador 
+\\ \hline
+\textbf{Precondición} & El usuario debe estar autenticado en la plataforma.
+\\ \hline
+\textbf{Secuencia normal} & 
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El administrador pincha sobre el botón “Contadores”
+\item El sistema muestra un listado de los contadores de sus clientes
+\item El administrador selecciona el contador cuya información desea ver
+\item El sistema le muestra los datos del contador seleccionado
+\end{enumerate}
+\\ \hline
+\textbf{Excepciones} & No se aplica
+\\ \hline
+\textbf{Prioridad} & Baja
+\\ \hline
+\textbf{Comentarios} & Sin comentarios
+\\ \hline
+
+\caption{Especificación del caso de uso CU12.} \label{tablalarga:tablaCU12}
+\end{longtable}
+\end{center}
+
+
+
+
+
+
+
+
+
+%-----------------TABLA CU13------------------------
+
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{2,7cm}|m{11cm}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Especificación del caso de uso CU13}}\\
+\hline 
+\endhead
+
+\textbf{Identificador} & CU13  
+\\ \hline
+\textbf{Nombre} & Desconectarse
+\\ \hline
+\textbf{Descripción} & El sistema debe permitir que el usuario pueda cerrar su sesión.
+\\ \hline
+\textbf{Autor} & Rosa María de Juan Oliva 
+\\ \hline
+\textbf{Supervisor} & Jose Luís Martínez Pérez  
+\\ \hline
+\textbf{Actores} & Administrador, Cliente
+\\ \hline
+\textbf{Precondición} & El usuario debe estar autenticado en la plataforma.
+\\ \hline
+\textbf{Secuencia normal} & 
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El usuario pincha sobre el botón “Perfil” y selecciona la opción de “Desconectarse”
+\item El sistema cierra la sesión del usuario.
+\end{enumerate}
+\\ \hline
+\textbf{Excepciones} & No se aplica
+\\ \hline
+\textbf{Prioridad} & Alta  
+\\ \hline
+\textbf{Comentarios} & Sin comentarios
+\\ \hline
+
+\caption{Especificación del caso de uso CU13.} \label{tablalarga:tablaCU13}
+\end{longtable}
+\end{center}
