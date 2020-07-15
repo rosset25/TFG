@@ -1,0 +1,65 @@
+% ---- para los punto y aparte, tienes que poner el comando /break /break
+
+% -- Arquetipo Cliente ----
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{4,5cm}|m{10cm}|}
+\hline
+
+\textbf{Escenario 1} & Marta desea consultar el consumo de agua de su casa este último mes y compararlo con el gasto promedio de su hogar, en el cual viven su pareja, sus dos hijos y ella. 
+\\ \hline
+Qué necesita & Espera que haya botón o pestaña visible y fácil de  reconocer para acceder al listado de sus contadores de agua, ya que tiene dos viviendas en propiedad. \break \break
+Además, necesita que la información sobre el consumo del contador que esté consultando se vea de manera clara y comprensible. 
+\\ \hline
+\raggedright{Cómo le ayuda la \mbox{plataforma} web} & La plataforma web debe contener un listado de los contadores pertenecientes al cliente.  \break \break
+La vista del contador consultado será fácil de entender gracias al diseño de la plataforma web, que mostrará la gráfica de consumo junto con un pequeño formulario para especificar el período de tiempo y la frecuencia que se quiere consultar.  \break \break
+También dispondrá de datos del consumo del día actual, la diferencia con el día anterior y el promedio.  \break \break
+A su vez habrá un pequeño listado con las alarmas que tiene el contador.
+
+\\ \hline
+\textbf{Escenario 2} &     
+\\ \hline
+Qué necesita & 
+\\ \hline
+\raggedright{Cómo le ayuda la \mbox{plataforma} web} & 
+\\ \hline
+
+\caption{Ejemplo de arquetipo de usuario cliente} \label{tablalarga:tablaArquetipo1}
+\end{longtable}
+\end{center}
+% -----------------------
+
+
+
+% ---- Arquetipo Administrador ---
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{4,5cm}|m{10cm}|}
+\hline
+
+\textbf{Escenario 1} & 
+\\ \hline
+Qué necesita & 
+\\ \hline
+\raggedright{Cómo le ayuda la \mbox{plataforma} web} & 
+\\ \hline
+\textbf{Escenario 2} &     
+\\ \hline
+Qué necesita & 
+\\ \hline
+\raggedright{Cómo le ayuda la \mbox{plataforma} web} & 
+\\ \hline
+
+\caption{Ejemplo de arquetipo de usuario administrador} \label{tablalarga:tablaArquetipo2}
+\end{longtable}
+\end{center}

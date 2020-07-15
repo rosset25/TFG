@@ -1,0 +1,70 @@
+% ---- para los punto y aparte, tienes que poner el comando /break /break
+
+% -- Arquetipo Cliente ----
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{4,5cm}|m{10cm}|}
+\hline
+
+\textbf{Escenario 1} & Marta desea consultar el consumo de agua de su casa este último mes y compararlo con el gasto promedio de su hogar, en el cual viven su pareja, sus dos hijos y ella. 
+\\ \hline
+Qué necesita & Espera que haya botón o pestaña visible y fácil de  reconocer para acceder al listado de sus contadores de agua, ya que tiene dos viviendas en propiedad. \break \break
+Además, necesita que la información sobre el consumo del contador que esté consultando se vea de manera clara y comprensible. 
+\\ \hline
+\raggedright{Cómo le ayuda la \mbox{plataforma} web} & La plataforma web debe contener un listado de los contadores pertenecientes al cliente.  \break \break
+La vista del contador consultado será fácil de entender gracias al diseño de la plataforma web, que mostrará la gráfica de consumo junto con un pequeño formulario para especificar el período de tiempo y la frecuencia que se quiere consultar.  \break \break
+También dispondrá de datos del consumo del día actual, la diferencia con el día anterior y el promedio.  \break \break
+A su vez habrá un pequeño listado con las alarmas que tiene el contador.
+\\ \hline
+\textbf{Escenario 2} & Marta desea activar una alarma para el contador de la casa de campo que tiene, la cual sólo visita en verano, para que le avise en caso de que se produzca una fuga.    
+\\ \hline
+Qué necesita & Espera que haya un botón o pestaña visible para poder programar una alarma en el contador en el que desea añadirla. \break \break
+También necesita que el proceso sea fácil y rápido.
+\\ \hline
+\raggedright{Cómo le ayuda la \mbox{plataforma} web} & La plataforma web dispondrá de una pestaña en la cual se listen las alarmas de todos los contadores del cliente y un botón fácil de localizar llamado “Añadir”. \break \break
+Además, se podrá añadir una alarma desde la vista que contiene la información de un contador, ya que en ésta también se verán las alarmas que contiene.
+\\ \hline
+
+\caption{Ejemplo de arquetipo de usuario cliente} \label{tablalarga:tablaArquetipo1}
+\end{longtable}
+\end{center}
+% -----------------------
+
+
+
+% ---- Arquetipo Administrador ---
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|m{4,5cm}|m{10cm}|}
+\hline
+
+\textbf{Escenario 1} & Sara desea dar de alta a un nuevo cliente en la plataforma.
+\\ \hline
+Qué necesita & Espera poder realizar el alta del cliente de manera segura, con la opción de cancelar la operación en cualquier momento en caso de detectar algún error en los datos del cliente.
+\\ \hline
+\raggedright{Cómo le ayuda la \mbox{plataforma} web} & La plataforma web debe tener de una pestaña en la cual se listen los clientes que gestiona la administradora y un botón fácil de localizar llamado “Añadir nuevo cliente”. \break \break
+También dispondrá de un formulario con los campos a rellenar el cual necesitará confirmación por parte de la administradora para poder registrar los datos proporcionados.
+\\ \hline
+\textbf{Escenario 2} & Sara desea consultar los datos del consumo promedio de los habitantes de una de las ciudades donde su empresa suministra el agua.    
+\\ \hline
+Qué necesita & Espera que haya algún tipo de filtro para poder indicar el listado de los contadores que desea ver.
+Además, necesita poder ver el promedio de consumo de los contadores filtrados.
+\\ \hline
+\raggedright{Cómo le ayuda la \mbox{plataforma} web} & La plataforma web debe tener un listado de contadores con un filtro en el cual indicar las localidades que se quieren consultar. \break \break
+A su vez, se dispondrá de un buscador para encontrar los contadores de un cliente determinado. \break \break
+También tendrá un botón con el que poder calcular el promedio de consumo con los datos de los contadores filtrados.
+\\ \hline
+
+\caption{Ejemplo de arquetipo de usuario administrador} \label{tablalarga:tablaArquetipo2}
+\end{longtable}
+\end{center}

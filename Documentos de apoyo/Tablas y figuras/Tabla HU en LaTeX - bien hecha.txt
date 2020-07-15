@@ -1,0 +1,67 @@
+
+\renewcommand{\tablename}{Tabla}
+
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|>{\centering\arraybackslash}X m{2cm}|m{13cm}|}
+\hline
+\multicolumn{2}{|c|}{multicolumna 1-2}\\
+%{\centering Código} &
+%{\centering \begin{center}Historia de usuario\end{center}} &
+%{Puntos de historia} &
+%{Prioridad} &
+\hline 
+\endhead
+
+Historia de usuario & Como usuario sagduiadias.\\ \hline
+\multirow[t]{2}[1]{2cm}{\centering Escenarios y pruebas de aceptación} 
+& Escenario válido: el usuario introduce una contraseña correcta \break
+Given:
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item Contraseña válida: asjdpjaso
+\item Usuario válido: asjdpjaso
+\end{enumerate}
+
+When:
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El usuario doajdñajsñdlmaslñ
+\item jasñdjñas assdjajd aslsdjla dkasdna sdlkasnldlka
+\end{enumerate}
+Then:
+\addtolength{\itemsep}{-3mm}
+\begin{itemize}
+\addtolength{\itemsep}{-3mm}
+\item Edad de Piedra
+\item Paleolítico
+\end{itemize}
+ \\ 
+\cline{2-2}
+& columna 2ual y diario de todos mis contadores para saber cuál es mi gasto de agua ual y diario de todos mis contadore sadòas. 
+Given:
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item Contraseña válida: asjdpjaso
+\item Usuario válido: asjdpjaso
+\end{enumerate}
+When:
+\begin{enumerate}
+\item El usuario doajdñajsñdlmaslñ
+\item jasñdjñas assdjajd aslsdjla dkasdna sdlkasnldlka
+\end{enumerate}
+Then:
+\begin{itemize}
+\item Edad de Piedra
+\item Paleolítico
+\end{itemize}
+
+\\
+\hline
+
+\caption{Pila del producto.} \label{tablalarga:tablaHU}
+\end{longtable}
+\end{center}

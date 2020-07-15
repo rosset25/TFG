@@ -1,0 +1,10 @@
+
+para referirse a la figura: blabla Figura \ref{fig:logoUJI}
+
+
+  	\begin{figure}[h]
+		\begin{center}
+		\resizebox{!}{3cm}{\includegraphics{logoUJI.jpg}} \\
+		\end{center}
+		\caption{Logo UJI.} \label{fig:logoUJI}
+  	\end{figure}

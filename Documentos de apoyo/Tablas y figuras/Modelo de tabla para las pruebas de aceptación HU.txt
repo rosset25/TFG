@@ -1,0 +1,75 @@
+
+
+% -----------------------
+
+% TABLAS DE HISTORIAS DE USUARIOS, ponerlo en el apartado de testing
+
+%SON PRUEBAS DE ACEPTACIÓN EN REALIDAD
+% H1
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\arraystretch}{1,7}
+\pretolerance=1000
+\tolerance=1000
+
+\begin{center}
+\begin{longtable}{|>{\centering\arraybackslash}X m{2cm}|m{13cm}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Prueba de aceptación - Historia de usuario HU1}}\\
+\hline 
+\endhead
+
+Historia de usuario & Como usuario quiero ver mi lista de contadores para saber sus datos.  
+\\ \hline
+
+Escenario válido & 
+Como usuario quiero loguearme en la plataforma para poder consultar la información de mis contadores de agua y mi consumo. \break
+\break
+Given:
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item Contraseña válida: asjdpjaso
+\item Usuario válido: asjdpjaso
+\end{enumerate}
+When:
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El usuario doajdñajsñdlmaslñ
+\item jasñdjñas assdjajd aslsdjla dkasdna sdlkasnldlka
+\end{enumerate}
+Then:
+\addtolength{\itemsep}{-3mm}
+\begin{itemize}
+\addtolength{\itemsep}{-3mm}
+\item Edad de Piedra
+\item Paleolítico
+\end{itemize}
+
+\\ \hline
+Escenario inválido & 
+Como usuario quiero loguearme en la plataforma para poder consultar la información de mis contadores de agua y mi consumo. \break
+\break
+Given:
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item Contraseña válida: asjdpjaso
+\item Usuario válido: asjdpjaso
+\end{enumerate}
+When:
+\begin{enumerate}
+\addtolength{\itemsep}{-3mm}
+\item El usuario doajdñajsñdlmaslñ
+\item jasñdjñas assdjajd aslsdjla dkasdna sdlkasnldlka
+\end{enumerate}
+Then:
+\addtolength{\itemsep}{-3mm}
+\begin{itemize}
+\addtolength{\itemsep}{-3mm}
+\item Edad de Piedra
+\item Paleolítico
+\end{itemize}
+
+\\ \hline
+
+\caption{Prueba de aceptación HU1.} \label{tablalarga:tablaHU1}
+\end{longtable}
+\end{center}
